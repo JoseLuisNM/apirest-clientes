@@ -25,6 +25,16 @@ public class ClientesServicesImpl  implements IClientesService {
     }
 
     @Override
+    public Cliente obtenerPorId(Long id) {
+        return repository.findById(id).orElse(new Cliente());
+    }
+
+    @Override
+    public Cliente crearCliente(Cliente cliente) {
+        return repository.save(cliente);
+    }
+
+    @Override
     public List<Cliente> buscarPorQuery(String query) {
         return repository.obtenerPorQueryString(query.toLowerCase());
     }

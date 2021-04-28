@@ -15,17 +15,30 @@ public class ClientesController {
     private IClientesService service;
 
     public ClientesController(IClientesService service){
+
         this.service = service;
     }
 
     @GetMapping("")
     public List<Cliente> index(){
+
         return service.obtenerTodos();
+    }
+
+    @GetMapping("/{id}")
+        public Cliente getById(@PathVariable Long id){
+        return service.obtenerPorId(id);
     }
 
     @GetMapping("/search")
     public List<Cliente> search(@RequestParam("query") String query){
+
         return service.buscarPorQuery(query);
+    }
+
+    @PostMapping("")
+    public Cliente create(@RequestBody Cliente cliente){
+        return service.crearCliente(cliente);
     }
 
     @DeleteMapping("/{id}")

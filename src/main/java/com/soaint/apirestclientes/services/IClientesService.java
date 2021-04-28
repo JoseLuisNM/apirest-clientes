@@ -10,6 +10,10 @@ public interface IClientesService {
 
     void eliminarPorId(Long id);
 
+    Cliente obtenerPorId(Long id);
+
+    Cliente crearCliente(Cliente cliente);
+
     List<Cliente> buscarPorQuery(String query);
 
 }
