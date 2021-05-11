@@ -48,3 +48,9 @@ insert into clientes (nombre, apellido, email, sexo, fecha_creacion) values ('Ca
 insert into clientes (nombre, apellido, email, sexo, fecha_creacion) values ('Suzanne', 'Raddon', 'sraddon1b@last.fm', 'Non-binary', '2021-04-06');
 insert into clientes (nombre, apellido, email, sexo, fecha_creacion) values ('Micah', 'Isgar', 'misgar1c@technorati.com', 'Genderqueer', '2020-10-15');
 insert into clientes (nombre, apellido, email, sexo, fecha_creacion) values ('Leanora', 'Devonport', 'ldevonport1d@examiner.com', 'Bigender', '2021-03-26');
+
+insert into cuentas (numero_cuenta, cliente_id, fecha_creacion) values ("5907-8226-77-7524073084", 1, '2021-04-05')
+insert into cuentas (numero_cuenta, cliente_id, fecha_creacion) values ("8796-8226-77-7524073084", 1, '2021-04-05')
+insert into cuentas (numero_cuenta, cliente_id, fecha_creacion) values ("3456-8226-77-7524073084", 3, '2021-04-05')
+insert into cuentas (numero_cuenta, cliente_id, fecha_creacion) values ("7643-8226-77-7524073084", 4, '2021-04-05')
+insert into cuentas (numero_cuenta, cliente_id, fecha_creacion) values ("9878-8226-77-7524073084", 5, '2021-04-05')

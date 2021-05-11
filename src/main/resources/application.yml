@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/clientes_db
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-plataform: org.hibernate.dialect.MySQL57InnoDBDialect
+    hibernate:
+      ddl-auto: create
+
+logging:
+  level:
+    org.hibernate.SQL: debug
